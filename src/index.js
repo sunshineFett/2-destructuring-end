@@ -4,11 +4,22 @@ const [a, b, ...c] = newArray;
 // const b = newArray[1];
 console.log(c);
 
-// const person = {
-//   name: "Scott",
-//   age: 32,
-//   job: "Web Dev"
-// };
+function sayHi() {
+  return console.log("hello");
+}
+
+sayHi()
+
+
+const myNewArray = ["hi","scott","spreadftw"];
+const [f, g, ...h] = myNewArray;
+console.log(f)
+
+const person = {
+   name: "Scott",
+   age: 32,
+   job: "Web Dev"
+};
 
 // const makePerson = (name, age, job) => {
 //   return {
@@ -30,6 +41,8 @@ const dev = makePerson("scott", 32, "web dev");
 // X const name = dev.name;
 // X const devName = dev.name;
 const { name, ...rest } = dev;
+
+console.log('dev members: ' + dev.name)
 
 // this.props.names
 // const { names } = this.props;
